@@ -10,11 +10,20 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* IMPORTANT */
 }
 
 html {
     font-family: 'Oxygen', sans-serif;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #383838;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 /* HEADER */
@@ -27,6 +36,8 @@ header {
     align-items: center;
     padding: 0px 24px;
     color: #383838;
+    position: fixed;
+    z-index: 100;
 }
 
 #logo {
@@ -59,6 +70,61 @@ span.logo-one {
 }
 
 span.logo-two {
-    color: #808080;
+    color: #d1d1d1;
     font-weight: 300;
+}
+
+/* BANNER */
+
+#banner img {
+    padding: 0px 24px;
+    width: 60%;
+    display: inline-block;
+}
+
+#banner {
+    text-align: left;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #d1d1d1;
+}
+
+.banner-content {
+    width: 30%;
+    padding: 0px 24px;
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.banner-content h1 {
+    padding: 24px 0px;
+    font-weight: 800;
+}
+
+.banner-content h2 {
+    padding: 50px 0px;
+    color: #383838;
+}
+
+.button {
+    padding: 8px 0px;
+}
+
+.button h2 {
+    padding: 0;
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.button {
+    background-color: #383838;
+}
+
+.button h2 {
+    color: white;
 }
