@@ -26,6 +26,11 @@ h2 {
     font-size: 2rem;
 }
 
+#main {
+    position: relative;
+    top: 32px;
+}
+
 /* HEADER */
 
 header {
@@ -38,6 +43,7 @@ header {
     color: #383838;
     position: fixed;
     z-index: 100;
+    background-color: white;
 }
 
 #logo {
@@ -75,6 +81,11 @@ span.logo-two {
 }
 
 /* BANNER */
+
+#banner {
+    position: relative;
+    top: 32px;
+}
 
 #banner img {
     padding: 0px 24px;
@@ -127,4 +138,46 @@ span.logo-two {
 
 .button h2 {
     color: white;
+}
+
+/* INFORMATION */
+
+#information {
+    display: inline-block;
+    position: relative;
+    top: 32px;
+    padding: 32px 0px;
+    height: auto;
+    width: 100%;
+}
+
+.information-content img {
+    display: block;
+    width: 90%;
+    padding: 0px 24px;
+}
+
+.information-content {
+    width: 55%;
+    display: inline-block;
+}
+
+.events {
+    display: inline-block;
+    width: 40%;
+    border-left: solid 1px gray;
+}
+
+.event {
+    display: block;
+}
+
+.event img {
+    display: inline-block;
+    width: 35%;
+    height: auto;
+}
+
+.event-text {
+    display: inline-block;
 }
