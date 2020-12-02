@@ -176,14 +176,14 @@ span.logo-two {
     line-height: 20px;
     font-size: 1.4rem;
     font-weight: 100;
-    color: #616161;
+    color: #707070;
 }
 
 .information-content h5 {
     padding-bottom: 32px;
     font-size: 1.05rem;
     font-weight: 400;
-    color: #616161;
+    color: #333333;
 }
 
 .events {
@@ -243,4 +243,66 @@ span.logo-two {
 
 .read-more:hover {
     color: #3885ff;
+}
+
+/* COURSES */
+
+#start-learning {
+    background-color: #ededed;
+    padding: 32px 72px;
+}
+
+#start-learning h1 {
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+#courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.course {
+    display: block;
+    width: 500px;
+    margin-bottom: 32px;
+    background-color: white;
+}
+
+.course img {
+    display: block;
+    height: auto;
+    width: 100%;
+    margin: 0;
+}
+
+.course p,
+.course span,
+.course h3 {
+    display: block;
+    margin: 0;
+    text-align: left;
+}
+
+.course h3 {
+    font-size: 1.8em;
+    color: #383838;
+    padding: 16px 16px;
+}
+
+.course span {
+    padding: 8px 16px;
+    text-transform: uppercase;
+}
+
+.course p {
+    padding: 0px 0px 16px 16px;
+}
+
+.course span,
+.course p {
+    color: #707070;
+    font-size: 1.4rem;
 }
