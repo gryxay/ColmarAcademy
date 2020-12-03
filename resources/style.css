@@ -23,11 +23,17 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    color: #383838;
 }
 
 h3 {
     font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.4rem;
+    color: #707070;
 }
 
 #main {
@@ -174,9 +180,7 @@ span.logo-two {
 .information-content p {
     padding: 40px 0px 60px 0px;
     line-height: 20px;
-    font-size: 1.4rem;
     font-weight: 100;
-    color: #707070;
 }
 
 .information-content h5 {
@@ -203,7 +207,7 @@ span.logo-two {
 }
 
 .event:last-child {
-    background-color: #e0e0e0;
+    background-color: #ededed;
 }
 
 .event img {
@@ -241,7 +245,7 @@ span.logo-two {
     font-weight: 600;
 }
 
-.read-more:hover {
+span.read-more:hover {
     color: #3885ff;
 }
 
@@ -305,4 +309,64 @@ span.logo-two {
 .course p {
     color: #707070;
     font-size: 1.4rem;
+}
+
+/* THESIS */
+
+#thesis {
+    width: 100%;
+    padding: 32px 8px 32px 24px; 
+}
+
+#thesis h1 {
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.thesis-content {
+    display: flex;
+}
+
+.thesis-intro {
+    max-width: 60%;
+    padding-right: 24px;
+}
+
+.thesis-intro h2 {
+    padding: 24px 0px;
+}
+
+.thesis-intro p {
+    padding-bottom: 32px;
+}
+
+.thesis-intro video {
+    width: 100%;
+    height: auto;
+}
+
+.thesis-info {
+    max-width: 40%;
+}
+
+.thesis-info-single {
+    align-items: center;
+    display: flex;
+    padding: 16px;
+}
+
+.thesis-info-single img {
+    display: block;
+    width: 35%;
+    padding-right: 16px;
+}
+
+.thesis-info-single-content {
+    width: 65%;
+    display: block;
+    line-height: 4rem;
+}
+
+.thesis-info-single:first-child {
+    background-color: #ededed;
 }
