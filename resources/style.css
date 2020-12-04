@@ -36,6 +36,11 @@ p {
     color: #707070;
 }
 
+a {
+    text-decoration: none;
+    color: #383838;
+}
+
 #main {
     position: relative;
     top: 32px;
@@ -88,6 +93,10 @@ span.logo-one {
 span.logo-two {
     color: #d1d1d1;
     font-weight: 300;
+}
+
+@media only screen and (max-width: 900px) {
+    
 }
 
 /* BANNER */
@@ -369,4 +378,31 @@ span.read-more:hover {
 
 .thesis-info-single:first-child {
     background-color: #ededed;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 0px 24px 32px 24px;
+    font-size: 1.1rem;
+}
+
+.footer-content {
+    border-top: solid 1px #d1d1d1;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+
+.footer-content p {
+    font-size: 1.1rem;
+    color: #707070;
+}
+
+.terms-privacy {
+    color: #707070;
+}
+
+.terms-privacy span:first-child {
+    padding-right: 18px;
 }
