@@ -29,6 +29,7 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
+    color: #383838;
 }
 
 p {
@@ -46,7 +47,11 @@ a {
     top: 32px;
 }
 
-/* HEADER */
+/* HEADER DESKTOP */
+
+header.mobile {
+    display: none;
+}
 
 header {
     width: 100%;
@@ -76,27 +81,53 @@ header nav ul li {
     font-size: 1.3em;
 }
 
-#logo span {
+.desktop #logo span {
     text-transform: uppercase;
     font-size: 2em;
 }
 
-#logo img {
+.desktop #logo img {
     width: 2.5em;
 }
 
-span.logo-one {
+.desktop span.logo-one {
     color: #383838;
     font-weight: bold;
 }
 
-span.logo-two {
+.desktop span.logo-two {
     color: #d1d1d1;
     font-weight: 300;
 }
 
-@media only screen and (max-width: 900px) {
-    
+
+/* HEADER MOBILE */
+
+header {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 24px;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+}
+
+@media only screen and (max-width: 874px) {
+    header.desktop {
+        display: none;
+    }
+
+    header.mobile {
+        display: flex;
+        max-height: 64px;
+    }
+
+    header.mobile img {
+        width: 40px;
+    }
 }
 
 /* BANNER */
@@ -104,12 +135,15 @@ span.logo-two {
 #banner {
     position: relative;
     top: 32px;
+    display: flex;
 }
 
 #banner img {
     padding: 0px 24px;
     width: 60%;
-    display: inline-block;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
 #banner {
@@ -122,12 +156,9 @@ span.logo-two {
 .banner-content {
     width: 30%;
     padding: 0px 24px;
-    display: inline-block;
+    display: block;
     margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    margin-top: 100px;
 }
 
 .banner-content h1 {
@@ -157,7 +188,44 @@ span.logo-two {
     letter-spacing: 1px;
 }
 
+/* BANNER MOBILE */
+
+@media only screen and (max-width: 874px) {
+
+    #banner {
+        padding-top: 0px;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #banner img {
+        display: block;
+        width: 100%;
+        padding: 0px 0px 32px 0px;
+        width: 100%;
+    }
+
+    .banner-content {
+        display: block;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .button {
+        background-color: #b3b3b3;
+    }
+
+    .button:hover {
+        background-color: #757575;
+    }
+}
+
 /* INFORMATION */
+
+.event img.desktop-img {
+    display: none;
+}
 
 #information {
     display: flex;
@@ -223,6 +291,7 @@ span.logo-two {
     max-width: 33%;
     height: auto;
     margin: 16px;
+    object-fit: cover;
 }
 
 .event-text {
@@ -258,7 +327,54 @@ span.read-more:hover {
     color: #3885ff;
 }
 
+/* INFORMATION MOBILE */
+
+@media only screen and (max-width: 1257px) {
+
+    .information-content {
+        display: none;
+    }
+
+    .events {
+        width: 100%;
+    }
+
+    .event {
+        display: block;
+        border: none;
+    }
+
+    .event img.desktop-img {
+        display: none;
+    }
+
+    .event img.mobile-img {
+        display: block;
+        min-width: 80%;
+        margin: auto;
+    }
+
+    .event:last-child {
+        background-color: white;
+    }
+
+    .event-text {
+        margin: auto;
+        width: 100%;
+    }
+
+    .event-text h2,
+    .event-text p,
+    .event-text span {
+        margin: auto;
+    }
+}
+
 /* COURSES */
+
+#courses-mobile {
+    display: none;
+}
 
 #start-learning {
     background-color: #ededed;
@@ -320,6 +436,38 @@ span.read-more:hover {
     font-size: 1.4rem;
 }
 
+/* COURSES MOBILE */
+
+@media only screen and (max-width: 874px) {
+
+    #start-learning {
+        background-color: white;
+        border-top: solid 1px #d6d6d6;
+        border-bottom: solid 1px #d6d6d6;
+    }
+
+    #courses {
+        display: none;
+    }
+
+    #courses-mobile {
+        display: block;
+    }
+
+    .course-mobile {
+        background-color: #d1d1d1;
+        width: 85%;
+        margin: 16px 8px 8px 8px;
+        padding: 16px 0px 24px 16px;
+    }
+
+    .course-mobile h3 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+}
+
 /* THESIS */
 
 #thesis {
@@ -329,7 +477,7 @@ span.read-more:hover {
 
 #thesis h1 {
     text-align: center;
-    padding-bottom: 32px;
+    padding: 32px 0px 16px 0px;
 }
 
 .thesis-content {
@@ -366,18 +514,42 @@ span.read-more:hover {
 
 .thesis-info-single img {
     display: block;
-    width: 35%;
+    max-width: 35%;
     padding-right: 16px;
 }
 
 .thesis-info-single-content {
     width: 65%;
     display: block;
-    line-height: 4rem;
+    line-height: 3rem;
 }
 
 .thesis-info-single:first-child {
     background-color: #ededed;
+}
+
+/* THESIS MOBILE */
+
+@media only screen and (max-width: 1170px) {
+    
+    #thesis {
+        padding: 0px;
+    }
+
+    .thesis-intro {
+        min-width: 100%;
+        padding: 16px 0px 24px 0px;
+    }
+    
+    .thesis-intro video {
+        display: block;
+        width: 100%;
+    }
+
+    .thesis-urban,
+    .thesis-info {
+        display: none;
+    }
 }
 
 /* FOOTER */

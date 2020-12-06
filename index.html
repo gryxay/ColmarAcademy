@@ -5,8 +5,10 @@
         <link rel="stylesheet" type="text/css" href="resources/style.css">
     </head>
     <body>
+
 <!-- HEADER -->
-        <header>
+
+        <header class="desktop">
                 <div id="logo">
                     <img src="resources/images/ic-logo.svg" alt="logo"/>
                     <span class="logo-one">Colmar</span>
@@ -21,6 +23,13 @@
                     </ul>
                 </nav>
         </header>
+        <header class="mobile">
+            <img src="resources/images/ic-logo.svg" alt="logo"/>
+            <img src="resources/images/ic-on-campus.svg" alt="on campus"/>
+            <img src="resources/images/ic-online.svg" alt="online"/>
+            <img src="resources/images/ic-login.svg" alt="login"/>
+        </header>
+
 <!-- BANNER -->
         
     <div id="main">
@@ -34,7 +43,9 @@
                     </div>
                 </div>
             </div>
+
     <!-- INFORMATION -->
+
             <div id="information">
                 <div class="information-content">
                     <img src="resources/images/information-main.jpg" alt="student reading"/>
@@ -47,7 +58,8 @@
                     </div>
                     <div class="events">
                         <div class="event">
-                            <img src="resources/images/information-orientation.jpg" alt=""/>
+                            <img class="desktop-img" src="resources/images/information-orientation.jpg" alt=""/>
+                            <img class="mobile-img" src="resources/images/information-orientation-mobile.jpg" alt=""/>
                             <div class="event-text">
                                 <h2>Orientation date</h2>
                                 <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
@@ -55,7 +67,8 @@
                             </div>
                         </div>
                         <div class="event">
-                            <img src="resources/images/information-campus.jpg" alt=""/>
+                            <img class="desktop-img" src="resources/images/information-campus.jpg" alt=""/>
+                            <img class="mobile-img" src="resources/images/information-campus-mobile.jpg" alt=""/>
                             <div class="event-text">
                                 <h2>Our campus</h2>
                                 <p>Find out which campus is close by you</p>
@@ -63,7 +76,8 @@
                             </div>
                         </div>
                         <div class="event">
-                            <img src="resources/images/information-guest-lecture.jpg" alt=""/>
+                            <img class="desktop-img" src="resources/images/information-guest-lecture.jpg" alt=""/>
+                            <img class="mobile-img" src="resources/images/information-guest-lecture-mobile.jpg" alt=""/>
                             <div class="event-text">
                                 <h2>Our guest lecture</h2>
                                 <p>Join a keynote with Oliver Sack about music in medical treatment</p>
@@ -72,6 +86,9 @@
                         </div>
                     </div>
             </div>
+
+        <!-- COURSES -->
+
             <div id="start-learning">
                 <h1>Start learning</h1>
                 <div id="courses">  
@@ -112,7 +129,30 @@
                         <p>Analytics, Content Marketing, Mobile Marketing</p>
                     </div>
                 </div>
+                <div id="courses-mobile">
+                    <div class="course-mobile">
+                        <h3>Software engineering</h3>
+                    </div>
+                    <div class="course-mobile">
+                        <h3>Computer art</h3>
+                    </div>
+                    <div class="course-mobile">
+                        <h3>Desgin</h3>
+                    </div>
+                    <div class="course-mobile">
+                        <h3>Data</h3>
+                    </div>
+                    <div class="course-mobile">
+                        <h3>Business</h3>
+                    </div>
+                    <div class="course-mobile">
+                        <h3>Marketing</h3>
+                    </div>
+                </div>
             </div>
+
+        <!-- THESIS -->
+
             <div id="thesis">
                 <h1>Thesis exhibit</h1>
                 <div class="thesis-content">
@@ -145,6 +185,9 @@
                     </div>
                 </div>
             </div>
+
+        <!-- FOOTER -->
+
             <footer>
                 <div class="footer-content">
                     <p>© 2016 Colmar academy. All rights reserved</p>
